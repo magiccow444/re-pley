@@ -12,12 +12,14 @@
 <body>
     <h1>Create an account</h1>
     <hr>
-    <form>
+    <form action="/login.html" mthod="POST">
         <label for="username">Username:</label>
         <input type="text" id="username" placeholder="i_love_re-pley123" minlength="2" maxlength="21" required><br><br>
         
         <label for="password">Password:</label>
-        <input type="password" id="password"><br>
+        <input type="password" id="password" required><br><br>
+
+        <button type="submit">Submit</button>
 
     </form><br>
     

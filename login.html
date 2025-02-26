@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="Images/Re-pley_Favicon.png">
-    <title>Home</title>
+    <title>Login</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <h1>Login into Re-Pley</h1>
+    <h1>Login into Re-pley</h1>
     <hr>
+    <form action="/map.html" mthod="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" minlength="2" maxlength="21" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br><br>
+
+        <button type="submit">Submit</button>
+
+    </form><br>
     <a href="create.html">Create an account</a>
     
 </body>
