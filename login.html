@@ -5,24 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="Images/Re-pley_Favicon.png">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js" defer></script>
 </head>
 
-<body>
-    <h1>Login into Re-pley</h1>
-    <hr>
-    <form action="/map.html" mthod="POST">
-        <label for="username">Username:</label>
-        <input type="text" id="username" minlength="2" maxlength="21" required><br><br>
+<body class="flex items-center justify-center min-h-screen bg-red-300">
+    <div class="bg-gray-100 p-9 rounded-lg shadow-lg w-96">
+        <h1 class="text-3xl font-bold text-center mb-4">Login to Re-pley</h1>
+        <br><hr><br>
+        <form action="/map.html" mthod="POST">
+            <label for="username" class="block text-gray-700">Username:</label>
+            <input type="text" id="username" class="w-full p-2 border rounded-lg mt-1" minlength="2" maxlength="21" required><br><br>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" required><br><br>
+            <label for="password" class="block text-gray-700">Password:</label>
+            <input type="password" id="password" class="w-full p-2 border rounded-lg mt-1" required><br><br>
 
-        <button type="submit">Submit</button>
+            <a href="create.html" class="w-full block text-center mt-4 p-2 rounded-lg bg-gray-400 text-white hover:bg-gray-600 active:bg-gray-700 transition">Create an account</a>
 
-    </form><br>
-    <a href="create.html">Create an account</a>
+            <button type="submit" class="w-full bg-red-500 text-white mt-6 p-2 rounded-lg hover:bg-red-700 active:bg-red-800 transition">Submit</button>
+
+        </form>
+    
+    </div>
+    
     
 </body>
 
