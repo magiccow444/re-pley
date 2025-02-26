@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="Images/Re-pley_Favicon.png">
     <title>Re-pley Map</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=APIKEYGOESHERE&callback=initMap" async defer></script>
+
 </head>
 
 <body>
-    <h1>
-        This is a map
-    </h1>
-    <a href="https://www.openstreetmap.org/" target="_blank" title="The map">Map</a>
+    <h1 class="text-3xl font-bold mb-4 p-2">This is a map</h1><hr><br>
+    <div id="map" style="height: 400px; width: 100%;"></div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
