@@ -2,7 +2,7 @@
 function initMap() {
     // Create a new map object, centered at a specific latitude and longitude
     const map = new google.maps.Map(document.getElementById("map"), {
-        var: { lat: 40.7128, lng: -74.0060 }, // Example: San Francisco
+        center: { lat: 40.7128, lng: -74.0060 }, // Example: San Francisco
         zoom: 12, // Zoom level
     });
 
